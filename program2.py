@@ -10,15 +10,11 @@ class Solution:
             'M': 1000
         }
 
-<<<<<<< HEAD
-        total = 00
-=======
         total = 0
->>>>>>> refs/remotes/origin/main
         prev_value = 0
 
         for char in reversed(s):
-            current_value = roman_values[char]
+            current_value = roman_values.get(char, 0)
             if current_value < prev_value:
                 total -= current_value
             else:
