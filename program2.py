@@ -10,7 +10,7 @@ class Solution:
             'M': 1000
         }
 
-        total = 0
+        total = 00
         prev_value = 0
 
         for char in reversed(s):
